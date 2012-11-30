@@ -9,8 +9,9 @@ snippet defc
         (defclass ${1:#:classname}
             ${2:#:body})
 snippet defm
-        (defmethod ${1:#:classname} (${2:#:params})
-            ${3:#:body})
+        (defmethod ${1:#:classname} 
+            (${2:#:method})
+            )
 snippet let
         (let ((${1:#:param} ${2:#:value})${3:#:etc params})
             ${4:#:body})
