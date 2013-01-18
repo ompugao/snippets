@@ -5,3 +5,9 @@ options     word
 snippet     includegraphics
 options     word
     \includegraphics[${1:width=}]{${2}}
+
+snippet     subfigure
+options     word
+    \subfigure[${1:#:caption}]{
+        \includegraphics[${2:#:width=}]{${3}}
+    }
