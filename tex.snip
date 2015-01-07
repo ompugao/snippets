@@ -11,3 +11,12 @@ options     word
     \subfigure[${1:#:caption}]{
         \includegraphics[${2:#:width=}]{${3}}
     }
+
+snippet     wrapfig
+options     word
+    \begin{wrapfigure}{${1:r}}{${2:width}}
+        \centering
+        \includegraphics[width=${3:width}]{${4}}
+        \caption{${5}}
+        \label{${6}}
+    \end{wrapfigure}
